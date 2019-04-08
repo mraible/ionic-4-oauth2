@@ -14,10 +14,15 @@
         <ion-card-title>Welcome to Ionic</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <p>Now that your app has been created, you'll want to start building out features and components. Log in to seem some resources for next steps.</p>
+        <ion-button *ngIf="!isAuthenticated" (click)="login()"> Login </ion-button>
+        <div *ngIf="isAuthenticated">
+          <p>Hi, {{ user?.name }}</p>
+          <ion-button (click)="logout()"> Logout </ion-button>
+        </div>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
+    <ion-list lines="none" *ngIf="isAuthenticated">
       <ion-list-header>
         <ion-label>Resources</ion-label>
       </ion-list-header>

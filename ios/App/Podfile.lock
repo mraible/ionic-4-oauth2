@@ -1,0 +1,35 @@
+PODS:
+  - ByteowlsCapacitorOauth2 (1.0.0-beta.4):
+    - Capacitor (~> 1.0.0-beta.16)
+    - OAuthSwift (= 1.3.0)
+  - Capacitor (1.0.0-beta.18):
+    - CapacitorCordova (= 1.0.0-beta.18)
+  - CapacitorCordova (1.0.0-beta.18)
+  - OAuthSwift (1.3.0)
+
+DEPENDENCIES:
+  - "ByteowlsCapacitorOauth2 (from `../../node_modules/@byteowls/capacitor-oauth2`)"
+  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OAuthSwift
+
+EXTERNAL SOURCES:
+  ByteowlsCapacitorOauth2:
+    :path: "../../node_modules/@byteowls/capacitor-oauth2"
+  Capacitor:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  ByteowlsCapacitorOauth2: 55fb13f1522b77df196c497a6ba9a2342885a82c
+  Capacitor: 88cffca2b430abc4cad9e25d27804b337d24b461
+  CapacitorCordova: e6a5445147c97688a859063961c83dac88d9a4bb
+  OAuthSwift: 7ef2f74cb570e1e30e2aeddc58fccc0f3891d057
+
+PODFILE CHECKSUM: b55a2adb8e94bdad1f8c8b5099286f4fba2b6124
+
+COCOAPODS: 1.5.3

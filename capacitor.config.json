@@ -1,0 +1,6 @@
+{
+  "appId": "com.okta.developer",
+  "appName": "ionic-oidc",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
