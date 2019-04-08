@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-oidc</string>
+    <string name="title_activity_main">ionic-oidc</string>
+    <string name="package_name">com.okta.developer</string>
+    <string name="fileprovider_authority">com.okta.developer.fileprovider</string>
+    <string name="custom_url_scheme">com.okta.developer</string>
+</resources>

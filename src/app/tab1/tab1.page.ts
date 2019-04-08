@@ -3,11 +3,11 @@ import { Plugins } from '@capacitor/core';
 import { OAuth2AuthenticateOptions } from '@byteowls/capacitor-oauth2';
 
 export const oauth2Options: OAuth2AuthenticateOptions = {
-  appId: '0oaj77t71ilKMteVj0h7',
-  authorizationBaseUrl: 'https://dev-737523.oktapreview.com/oauth2/default/v1/authorize',
-  accessTokenEndpoint: 'https://dev-737523.oktapreview.com/oauth2/default/v1/token',
+  appId: '0oaft6l2biU6Yotr3356',
+  authorizationBaseUrl: 'https://dev-133320.okta.com/oauth2/default/v1/authorize',
+  accessTokenEndpoint: 'https://dev-133320.okta.com/oauth2/default/v1/token',
   scope: 'email openid profile',
-  resourceUrl: 'https://dev-737523.oktapreview.com/oauth2/default/v1/userinfo',
+  resourceUrl: 'https://dev-133320.okta.com/oauth2/default/v1/userinfo',
   web: {
     redirectUrl: 'http://localhost:8100',
     windowOptions: 'height=600,left=0,top=0',
@@ -16,9 +16,14 @@ export const oauth2Options: OAuth2AuthenticateOptions = {
     }
   },
   ios: {
-    appId: '0oak72amybljHLd210h7',
+    appId: '0oaft6kwksPlgarMw356',
     responseType: 'code',
-    customScheme: 'com.oktapreview.dev-737523:/'
+    customScheme: 'com.okta.dev-133320:/callback'
+  },
+  android: {
+    appId: '0oaft6kwksPlgarMw356',
+    responseType: 'code',
+    customScheme: 'com.okta.dev-133320:/callback'
   }
 };
 
@@ -52,7 +57,7 @@ export class Tab1Page implements OnInit {
   logout() {
     Plugins.OAuth2Client.logout(oauth2Options).then((response) => {
       // do something
-      console.log('logout worked');
+      console.log('logout worked', response);
       this.isAuthenticated = false;
       this.user = null;
     }).catch(reason => {
